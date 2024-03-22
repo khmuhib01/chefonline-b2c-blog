@@ -6,7 +6,7 @@ if (Request::segment(1)) :
 endif;
 @endphp
 @section('slug', $slug)
-@section('header_title', 'ChefOnline Partners Information Hub | Catering Industry Updates')
+@section('header_title', 'Amber IT Ltd | High Speed Broadband Connections')
 @section('header_description', 'The latest and most important news and updates of the UK catering industry and current affairs, all in one convenient location for all restaurant businesses.')
 @section('content')
     <div class="main-content content-cat-8 col-sx-12 col-sm-12 col-md-8 col-lg-8">
@@ -36,9 +36,9 @@ endif;
 
                                 <div class="article-content ">
                                     <div class="entry-header clearfix">
-                                        <span class="post-cat"> <a href="http://localhost/chef_wp_blog/category/food/"
+                                        {{-- <span class="post-cat"> <a href="http://localhost/chef_wp_blog/category/food/"
                                                 title="">{{ getCategoryName($val->categories_id) }}</a>
-                                        </span>
+                                        </span> --}}
                                         <header class="entry-header-title">
                                             <h2 class="entry-title">
                                                 <a href="{{ url($val->slug) }}" rel="bookmark">{{ $val->title }}</a>
@@ -46,15 +46,15 @@ endif;
                                         </header>
                                     </div>
                                     <div class="article-meta clearfix">
-                                        <span class="byline"><span class="author vcard"><span
+                                        {{-- <span class="byline"><span class="author vcard"><span
                                                     class="screen-reader-text">
                                                 </span><span class="by">By</span><a class="url fn n"
-                                                    href="{{ url($val->slug) }}">ChefOnline</a></span></span>
-                                        <div class="posted-on post-date"><span class="author-on">on</span><span
+                                                    href="{{ url($val->slug) }}">ChefOnline</a></span></span> --}}
+                                        {{-- <div class="posted-on post-date"><span class="author-on">on</span><span
                                                 class="screen-reader-text"> </span><a href="{{ url($val->slug) }}"
                                                 rel="bookmark"><time class="entry-date published"
                                                     datetime="2022-03-14T15:00:22+00:00">{{ $post_date }}</time></a>
-                                        </div>
+                                        </div> --}}
                                         <div class="main-view-like">
                                             <div class="total-view">
                                                 <i class="fa fa-eye-slash"></i> {{ $val->views }}

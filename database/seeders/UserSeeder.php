@@ -7,11 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         DB::table('users')->insert([
@@ -19,6 +14,15 @@ class UserSeeder extends Seeder
 	            'first_name' => 'sajib',
                 'last_name' => 'mridha',
                 'email' => 'sajib@gmail.com',
+                'is_role' => '1',
+                'password' => bcrypt(123456),
+	            'created_at' => now(),
+	            'updated_at' => now(),
+            ],
+            [
+	            'first_name' => 'kh',
+                'last_name' => 'muhib',
+                'email' => 'muhib@gmail.com',
                 'is_role' => '1',
                 'password' => bcrypt(123456),
 	            'created_at' => now(),

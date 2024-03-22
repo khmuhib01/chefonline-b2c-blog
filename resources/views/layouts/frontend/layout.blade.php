@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@chefonlineuk" />
 	
-	<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
+	<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/amber_favicon.ico') }}">
     <script type="application/ld+json" class="yoast-schema-graph">
         {
             "@context": "https://schema.org",
@@ -166,7 +166,7 @@
                 <div class="header-content-logo container">
                     <div class="site-logo" id="logo">
                         <a href="https://www.chefonline.co.uk" rel="home">
-                            <img src="{{ asset('assets/images/frontend/logo.png') }}"
+                            <img src="{{ asset('assets/images/frontend/amber_logo.png') }}"
                                 alt="ChefOnline Blog | Reviews, Recipes, And Everything Foody" />
                         </a>
                     </div>
@@ -176,7 +176,7 @@
                             <div class="goody-image-content">
                                 <a class="clearfix" href="https://www.chefonline.co.uk/" target="_blank">
                                     <img class="goody-image"
-                                        src="{{ asset('assets/images/frontend/Web-blog-final-1.jpg') }}" alt="img" />
+                                        src="{{ asset('assets/images/frontend/amber-banner.jpg') }}" alt="img" />
                                 </a>
                             </div>
                         </div>
@@ -210,21 +210,14 @@
 
                             <div class="header-social">
                                 <div id="goody_social-4" class="widget first goody_social">
-                                    <div class="goody-social-icon clearfix"><a
-                                            href="https://www.facebook.com/ChefOnlineUK" title="ion-social-facebook"
-                                            class="ion-social-facebook"><i class="fa fa-facebook"></i></a><a
-                                            href="https://twitter.com/chefonlineuk" title="ion-social-twitter"
-                                            class="ion-social-twitter"><i class="fa fa-twitter"></i></a><a
-                                            href="https://www.instagram.com/chefonlineuk" title="ion-social-instagram"
-                                            class="ion-social-instagram"><i class="fa fa-instagram"></i></a><a
-                                            href="https://www.pinterest.com/chefonlineuk" title="ion-social-pinterest"
-                                            class="ion-social-pinterest"><i class="fa fa-pinterest"></i></a><a
-                                            href="https://www.youtube.com/channel/UCiuWjkTLdvJQ6EJECQa-7Zw"
-                                            title="ion-social-youtube" class="ion-social-youtube"><i
-                                                class="fa fa-youtube"></i></a><a
-                                            href="https://www.linkedin.com/company/chef-online"
-                                            title="ion-social-linkedin" class="ion-social-linkedin"><i
-                                                class="fa fa-linkedin"></i></a></div>
+                                    <div class="goody-social-icon clearfix">
+                                        <a href="https://www.facebook.com/ChefOnlineUK" title="ion-social-facebook" class="ion-social-facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://twitter.com/chefonlineuk" title="ion-social-twitter" class="ion-social-twitter"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/chefonlineuk" title="ion-social-instagram" class="ion-social-instagram"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.pinterest.com/chefonlineuk" title="ion-social-pinterest" class="ion-social-pinterest"><i class="fa fa-pinterest"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCiuWjkTLdvJQ6EJECQa-7Zw" title="ion-social-youtube" class="ion-social-youtube"><i class="fa fa-youtube"></i></a>
+                                        <a href="https://www.linkedin.com/company/chef-online" title="ion-social-linkedin" class="ion-social-linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </div>
                                 </div>
                             </div>
 

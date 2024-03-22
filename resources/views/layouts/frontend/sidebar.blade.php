@@ -6,7 +6,7 @@
                     <h1 class="widgettitle welcome">ChefOnline Food Blog</h1>
                 </div>
             </aside>
-            <aside id="text-9" class="widget widget_text">
+            {{-- <aside id="text-9" class="widget widget_text">
                 <h3 class="widgettitle">ChefOnline Service Rating</h3>
                 <div class="textwidget">
                     <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32"
@@ -19,7 +19,7 @@
                         </script>
                     </p>
                 </div>
-            </aside>
+            </aside> --}}
             <aside id="categories-6" class="widget widget_categories">
                 <h3 class="widgettitle">Categories</h3>
                 <ul>
@@ -33,6 +33,32 @@
                 </ul>
 
             </aside>
+            <aside id="recent-posts-widget-with-thumbnails-2" class="widget recent-posts-widget-with-thumbnails">
+                <div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
+                    <h3 class="widgettitle">MOST POPULAR POSTS</h3>
+                    <ul>
+                        @if (getRecentPosts())
+                            @foreach (getRecentPosts()->take(3) as $recentVal)
+                                @php 
+                                    $image = url('public/storage/image/on-image-thum.png');
+                                    if ($recentVal->image !="") :
+                                        $image = url('public/storage/image/post_image/thumbnail/big/'.$recentVal->image);
+                                    endif;
+                                    $post_date = date('F d, Y',strtotime($recentVal->created_at));
+                                @endphp
+                                <li><a href="{{ url($recentVal->slug) }}">
+                                        <img width="120" height="100" src="{{ $image }}"
+                                            class="attachment-120x100 size-120x100 wp-post-image" alt="ChefOnline"
+                                            loading="lazy" /><span class="rpwwt-post-title">{{ $recentVal->title }}</span>
+                                    </a>
+                                    <div class="rpwwt-post-date">{{ $post_date }}</div>
+                                </li>
+                            @endforeach
+                        @endif
+                    </ul>
+                </div>
+            </aside>
+
             <aside id="recent-posts-widget-with-thumbnails-2" class="widget recent-posts-widget-with-thumbnails">
                 <div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
                     <h3 class="widgettitle">RECENT POST</h3>
@@ -56,7 +82,7 @@
                             @endforeach
                         @endif
                     </ul>
-                </div><!-- .rpwwt-widget -->
+                </div>
             </aside>
             <aside id="weblizar_facebook_likebox-2" class="widget widget_weblizar_facebook_likebox">
                 <h3 class="widgettitle">Like Us On Facebook</h3>
